@@ -1,0 +1,38 @@
+1. Write a function that takes a word and returns true if the word ends with tonic. 
+ let wordStr = "Techtonica";
+ let regexToSearchFor =/tonica/;
+ regexToSearchFor.test(wordStr);
+
+2. Write a function expression that takes a string replaces all instances of symantec with semantic?
+  let wordStr = "Symantec is where we study.";
+  let regexToSearchFor = /Symantec/gi;
+
+  let newPlace = "semantic";
+  let newWordStr = wordStr.replace(regexToSearchFor, newPlace);
+  console.log(newWordStr);
+
+3. Write a function that takes a string and delete all the words that end in ing. 
+
+  let wordStr = "I go running, swimming and hiking once a week.";
+  let regexToSearchFor = /ing/gi;
+
+  let delIng = '';
+  let newStr = wordStr.replace(regexToSearchFor, delIng);
+  console.log(newStr);
+
+4. Write a function that takes a string and returns true if it is and email address? Compare your answer with your neighbor. 
+
+  let email = "Your new email is newemail@gmail.com."
+  let regexToSearchFor = /.com/;
+  regexToSearchFor.test(email);
+
+5. Write a function that takes a string containing names separated by commas like "Leah, Russel, Michelle" and returns an array of names ["Leah, "Russell", "Michelle"]
+
+  var strNames = "Leah, Russell, Michelle";
+  var removeComma = /\,/gi;
+  var newArray = strNames.replace(removeComma, "");
+  newArray.split(" ");
+
+//alternate not complete answer :(
+// let strName = "Leah, Russell, Michelle";
+// strName.split();
